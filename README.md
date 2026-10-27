@@ -1,81 +1,90 @@
-📚 BookMatch AI
+📚 BookMatch AI — Intelligent Book Recommendation System
 
-Discover your next favourite book with intelligent recommendations.
+Discover your next favorite book with BookMatch AI, an interactive book recommendation web application built with Python and Streamlit. Explore books, discover personalized recommendations, and rate books through a simple and user-friendly interface.
 
-BookMatch AI is a Python-based book discovery and recommendation web application built with Streamlit. It helps readers explore books, discover similar titles, rate books, and write reviews.
+🚀 Live Demo
+
+Try the application: "BookMatch AI" (https://bookmatch-ai-wqbnretfgkgvmcmhuxswgt.streamlit.app/)
+
+GitHub Repository: "aaryan-drops/BookMatch-AI" (https://github.com/aaryan-drops/BookMatch-AI)
 
 ✨ Features
 
-- 📖 Discover Books: Browse the complete book library.
-- 🔍 Search & Filter: Search by title, author, genre, or description.
-- 🧠 Content-Based Recommendations: Discover similar books using TF-IDF and cosine similarity.
-- 🎲 Surprise Me: Discover random books from the library.
-- ⭐ Ratings & Reviews: Rate books and save personal reviews.
-- 🏆 Top Rated Books: Explore books ranked by saved ratings.
-- 💾 SQLite Database: Store ratings and reviews locally.
+- Discover Books: Browse the available book collection.
+- Search and Filter: Find books based on available information.
+- AI-Powered Recommendations: Get book recommendations using content similarity.
+- Personalized Recommendations: Explore recommendations based on your ratings, where supported by the application.
+- Surprise Me: Discover a book through a random selection.
+- Top-Rated Books: Explore highly rated books.
+- Rate and Review: Submit ratings and reviews through the application.
+- Persistent Storage: Store ratings and reviews using SQLite.
+
+🧠 How It Works
+
+BookMatch AI uses TF-IDF vectorization and cosine similarity to compare book information and identify similar books.
+
+1. Book descriptions or other available text features are processed.
+2. TF-IDF converts text into numerical feature vectors.
+3. Cosine similarity measures how closely books match.
+4. The system recommends books with similar content.
 
 🛠️ Tech Stack
 
-- Python
-- Streamlit
-- Pandas
-- Scikit-learn
-- SQLite
-- TF-IDF and Cosine Similarity
+- Language: Python
+- Frontend and Web App: Streamlit
+- Data Processing: Pandas
+- Recommendation Engine: Scikit-learn (TF-IDF and cosine similarity)
+- Database: SQLite
+- Version Control: Git and GitHub
+- Deployment: Streamlit Community Cloud
 
-🚀 Getting Started
+📂 Project Structure
+
+BookMatch-AI/
+├── app.py
+├── books.csv
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── bookmatch.db        # Created locally when applicable
+
+⚙️ Run Locally
 
 1. Clone the repository
 
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd BookMatch
+git clone https://github.com/aaryan-drops/BookMatch-AI.git
+cd BookMatch-AI
 
 2. Create a virtual environment
 
 python -m venv venv
 
-The virtual environment will be created inside the project directory under the "venv" folder.
-
 3. Activate the environment
 
-Windows Command Prompt:
+Windows (Command Prompt):
 
-venv\Scripts\activate.bat
+venv\Scripts\activate
 
 4. Install dependencies
 
-pip install streamlit pandas scikit-learn
+pip install -r requirements.txt
 
-5. Run the application
+5. Launch the application
 
 streamlit run app.py
 
-📂 Project Structure
+The application should open in your browser. If it does not, open the local URL displayed in the terminal.
 
-BookMatch/
-├── app.py
-├── books.csv
-├── README.md
-└── requirements.txt
+🎯 Project Objective
 
-The SQLite database is created automatically when the application runs.
-
-🧠 How Recommendations Work
-
-BookMatch AI uses TF-IDF to represent book titles, authors, genres, and descriptions as numerical vectors. Cosine similarity compares these vectors to identify books with similar content.
-
-🔮 Future Improvements
-
-- Integrate a public book API for a larger catalogue.
-- Add book cover images.
-- Introduce user accounts and personalized reading lists.
-- Deploy the application online.
-- Add more advanced recommendation methods.
-
-⚠️ Note
-
-The current version uses a local book dataset. Ratings and reviews are stored in a local SQLite database, and the recommendation engine is content-based rather than a generative AI model.
+The goal of BookMatch AI is to demonstrate how text-based recommendation techniques can be integrated into an interactive web application to make book discovery easier and more engaging.
 
 👨‍💻 Author
 
-Created as a learning and portfolio project.
+Aaryan Mishra
+
+- GitHub: "@aaryan-drops" (https://github.com/aaryan-drops)
+
+---
+
+If you enjoy the project, consider giving the repository a ⭐ on GitHub!
