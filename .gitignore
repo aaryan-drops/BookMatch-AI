@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+bookmatch.db
+.streamlit/secrets.toml
+.env
